@@ -30,14 +30,14 @@
             // 
             pie_chart1.Location = new Point(12, 12);
             pie_chart1.Name = "pie_chart1";
-            pie_chart1.Size = new Size(546, 442);
+            pie_chart1.Size = new Size(694, 442);
             pie_chart1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 503);
+            ClientSize = new Size(929, 601);
             Controls.Add(pie_chart1);
             Name = "Form1";
             Text = "Form1";

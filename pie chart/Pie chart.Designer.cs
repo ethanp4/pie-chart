@@ -23,55 +23,66 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            inputs = new RichTextBox();
-            statusLabel = new Label();
-            displayText = new Label();
+            errorLabel = new Label();
+            label1 = new Label();
+            inputs = new TextBox();
+            labelPies = new Label();
             SuspendLayout();
+            // 
+            // errorLabel
+            // 
+            errorLabel.AutoSize = true;
+            errorLabel.Location = new Point(49, 84);
+            errorLabel.Name = "errorLabel";
+            errorLabel.Size = new Size(65, 20);
+            errorLabel.TabIndex = 1;
+            errorLabel.Text = "No error";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(49, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(307, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Enter a list of numbers separated by commas";
             // 
             // inputs
             // 
             inputs.Location = new Point(49, 54);
             inputs.Name = "inputs";
-            inputs.Size = new Size(125, 120);
-            inputs.TabIndex = 0;
-            inputs.Text = "10\n30\n45\n45";
+            inputs.Size = new Size(125, 27);
+            inputs.TabIndex = 3;
+            inputs.Text = "33, 33, 33";
             inputs.TextChanged += inputs_TextChanged;
             // 
-            // statusLabel
+            // labelPies
             // 
-            statusLabel.AutoSize = true;
-            statusLabel.Location = new Point(49, 31);
-            statusLabel.Name = "statusLabel";
-            statusLabel.Size = new Size(49, 20);
-            statusLabel.TabIndex = 1;
-            statusLabel.Text = "Status";
-            // 
-            // displayText
-            // 
-            displayText.AutoSize = true;
-            displayText.Location = new Point(46, 235);
-            displayText.Name = "displayText";
-            displayText.Size = new Size(50, 20);
-            displayText.TabIndex = 2;
-            displayText.Text = "label1";
+            labelPies.AutoSize = true;
+            labelPies.Location = new Point(49, 104);
+            labelPies.Name = "labelPies";
+            labelPies.Size = new Size(57, 20);
+            labelPies.TabIndex = 4;
+            labelPies.Text = "no pies";
             // 
             // Pie_chart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(displayText);
-            Controls.Add(statusLabel);
+            Controls.Add(labelPies);
             Controls.Add(inputs);
+            Controls.Add(label1);
+            Controls.Add(errorLabel);
             Name = "Pie_chart";
-            Size = new Size(437, 354);
+            Size = new Size(933, 511);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private RichTextBox inputs;
-        private Label statusLabel;
-        private Label displayText;
+        private Label errorLabel;
+        private Label label1;
+        private TextBox inputs;
+        private Label labelPies;
     }
 }
